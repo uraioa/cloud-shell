@@ -1,5 +1,5 @@
 #!/bin/sh
-
+#dd
 cd ../file/
 pkill -9 cf
 pkill -9 xray
