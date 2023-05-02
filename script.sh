@@ -1,5 +1,7 @@
 #!/bin/sh
 
 cd ../file/
-./cf tunnel run --url http://127.0.0.1 test &
+pkill -9 cf
+pkill -9 xray
+nohup ./cf tunnel run --url http://127.0.0.1 test &
 nohup ./xray -c 1.json &
